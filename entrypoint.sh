@@ -5,4 +5,4 @@ mkdir /.config
 mkdir /.config/rclone/
 wget "$CONFIG_IN_URL" -O /.rclone.conf
 rclone listremotes
-rclone serve webdav $CLOUDNAME: --addr :$PORT --vfs-read-chunk-size 128M
+rclone serve webdav $CLOUDNAME: --addr :$PORT --user asdf --pass asdf --vfs-read-chunk-size 128M
